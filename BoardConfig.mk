@@ -50,6 +50,22 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := begonia
+TARGET_NO_BOOTLOADER := true
+
+# Broken rules
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
+# Display
+TARGET_SCREEN_DENSITY := 440
+
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
 #BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864 # This is the maximum known partition size, but it can be higher, so we just omit it
